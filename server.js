@@ -8,7 +8,7 @@ app.listen(PORT, () => {
   console.log("Server Listening on PORT:", PORT);
 });
 
-app.post("/notification", (request, response) => {
+app.post("/", (request, response) => {
   console.log("Request", request);
   response.send("[accepted]");
 });
