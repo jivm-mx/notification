@@ -13,5 +13,10 @@ app.post("/", (request, response) => {
   response.send("[accepted]");
 });
 
+app.get("/", (request, response) => {
+  console.log("Request", request);
+  response.send("Hello world");
+});
+
 
 
