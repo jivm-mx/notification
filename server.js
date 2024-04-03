@@ -9,12 +9,12 @@ app.listen(PORT, () => {
 });
 
 app.post("/", (request, response) => {
-  console.log("Request", request);
+  console.dir(request.body);
   response.send("[accepted]");
 });
 
 app.get("/", (request, response) => {
-  console.log("Request", request);
+  console.log("Request", request.body);
   response.send("Hello world");
 });
 
